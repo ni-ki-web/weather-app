@@ -111,6 +111,11 @@ h1 {
   transition: color 0.4s ease, transform 0.3s ease;
 }
 
+.wi-day-cloudy.weather-icon, 
+.wi-cloudy.weather-icon { 
+  transform: translateY(20px);
+}
+
 /* Icon colors */
 .wi-day-sunny.weather-icon {
   color: #fdd835; 
