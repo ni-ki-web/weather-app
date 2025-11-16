@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.12/css/weather-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <h1>Weather App</h1>
+
+        <form id="location-form">
+            <input type="text" id="location-input" placeholder="Enter a city..." required>
+            <button type="submit">Search</button>
+        </form>
+
+        <button id="toggle-unit">Toggle °C / °F</button>
+        <div id="loader" class="loader hidden">
+             <i class="wi wi-day-sunny"></i>
+        </div>
+        <div id="weather-info"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
