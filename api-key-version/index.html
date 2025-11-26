@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App (Visual Crossing)</title>
+    <link rel="stylesheet" href="style.css">
+
+<body>
+    <div class="app">
+        <form id="weather-form">
+            <input id="city-input" type="text" placeholder="Enter city..." required>
+            <button type="submit">Search</button>
+        </form>
+
+        <div id="loader" class="loader hidden">
+            <img class="loader-icon" src="https://raw.githubusercontent.com/visualcrossing/WeatherIcons/main/PNG/1st%20Set%20-%20Color/clear-day.png" alt="loading">
+        </div>
+
+        <div id="weather" class="weather hidden">
+            <h2 id="location"></h2>
+            <img id="weather-icon" alt="weather-icon">
+            <p id="condition"></p>
+            <p id="temperature"></p>
+            <p id="wind"></p>
+            <p id="humidity"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

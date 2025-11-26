@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #74b9ff, #81ecec);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* ----------- App Container ----------- */
+.app {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+    padding: 25px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    animation: fadeIn 0.5s ease;
+}
+
+/* ----------- Form ----------- */
+#weather-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#weather-form input {
+    flex: 1;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+#weather-form button {
+    padding: 12px 18px;
+    background: #0984e3;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#weather-form button:hover {
+    background: #74b9ff;
+}
+
+/* ----------- Loader ----------- */
+.loader {
+    margin: 20px auto;
+}
+
+.loader-icon {
+    width: 70px;
+    animation: spin 1.2s linear infinite;
+}
+
+/* Hidden state */
+.hidden {
+    display: none;
+}
+
+/* ----------- Weather Box ----------- */
+.weather {
+    animation: fadeIn 0.4s ease;
+}
+
+#location {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#description {
+    font-size: 18px;
+    color: #2d3436;
+    margin-bottom: 5px;
+}
+
+#temperature {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/* ----------- Weather Icon (Visual Crossing PNGs) ----------- */
+#weather-icon {
+    width: 110px;
+    height: 110px;
+    object-fit: contain;
+    margin: 10px auto;
+    display: block;
+}
+
+/* ----------- Animations ----------- */
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ----------- Responsive ----------- */
+@media (max-width: 450px) {
+    .app {
+        padding: 20px;
+    }
+
+    #weather-icon {
+        width: 90px;
+        height: 90px;
+    }
+}
