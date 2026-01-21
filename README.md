@@ -1,6 +1,6 @@
 # Weather App
 
-A simple weather application built for **The Odin Project** using **vanilla JavaScript**, **Open-Meteo**, **OpenStreetMap (Nominatim)**, and **Weather Icons**.
+A simple weather application built as part of **The Odin Project** using **vanilla JavaScript**, **Open-Meteo**, **OpenStreetMap (Nominatim)**, and **Weather Icons**.
 
 Users can search for any city, fetch current weather conditions, and view them with icons, dynamic backgrounds, and temperature unit toggling.
 
@@ -30,4 +30,7 @@ Possible future additions:
 - Add hourly or 7-day forecast
 - Add humidity, sunrise/sunset, low/high temperature
 - Improve UI responsiveness
-- Allow pining a default location
+- Allow pinning a default location
+
+## Notes
+This project is focused on clean, readable vanilla JavaScript rather than frameworks.
