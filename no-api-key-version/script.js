@@ -32,6 +32,9 @@ async function getCoordinates(location) {
 async function getWeather(location) {
   const coords = await getCoordinates(location);
   const response = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${coords.lat}&longitude=${coords.lon}&current_weather=true`);
+  if(!response.ok) {
+    throw new Error("Weather API error");
+  }
   const data = await response.json();
   return {
     location: coords.name,
