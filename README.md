@@ -13,6 +13,8 @@ Users can search for any city, fetch current weather conditions, and view them w
 - OpenStreetMap Nominatim API
 - Weather Icons CDN
 
+- For API key version -- **Visual Crossing**
+
 
 ## API Key & Security Note
 This project includes an API key for the Visual Crossing weather API.
