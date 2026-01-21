@@ -14,6 +14,16 @@ Users can search for any city, fetch current weather conditions, and view them w
 - Weather Icons CDN
 
 
+## API Key & Security Note
+This project includes an API key for the Visual Crossing weather API.
+
+- This key is used for learning purposes only
+- It is a free-tier key with limited usage
+- the Odin Project explicilty allows including API keys for thi project
+
+In production applications, API keys should be stored securely and not exposed client-side.
+
+
 ## What I Learned
 - How to work with multiple APIs in a single app
 - Parsing and cleaning API JSON into usable objects
