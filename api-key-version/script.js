@@ -5,7 +5,7 @@ const weatherBox = document.getElementById("weather");
 
 const locationEl = document.getElementById("location");
 const icon = document.getElementById("weather-icon");
-const weatherCondition = document.getElementById("condition");
+const conditionEl = document.getElementById("condition");
 const temp = document.getElementById("temperature");
 const wind = document.getElementById("wind");
 const humidity = document.getElementById("humidity");
@@ -27,9 +27,9 @@ form.addEventListener("submit", async (e) => {
     } catch (err) {
         alert("City not found or API error. Please check spelling or try another.");
         console.error(err);
+    } finally {
+        showLoader(false);
     }
-
-    showLoader(false);
 });
 
 async function fetchWeather(city) {
@@ -45,7 +45,7 @@ function displayWeather(data) {
     const today = data.currentConditions;
 
     locationEl.textContent = data.address;
-    weatherCondition.textContent = today.conditions;
+    conditionEl.textContent = today.conditions;
     temp.textContent = `${today.temp}°C`;
     wind.textContent = `WindSpeed: ${today.windspeed} km/h`;
     humidity.textContent = `Humidity: ${today.humidity}%`;
